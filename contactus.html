@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tamilnadu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    </head>
+<body>
+    <div class="header1">
+        <nav>
+        <a href="index.html" ><img src="image/logo.jpg" alt="logo"></a>
+            <div class="nav" id="nav">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="religious.html">RELIGIOUS</a></li>
+                <li><a href="hillstation.html">HILL STATION</a></li>
+                <li><a href="coastalarea.html">COASTAL AREA</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                    </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <h1>Contact Us</h1>
+       
+            <p>we would love to share with you</p>
+        </div>
+    <!------------------------contact us----------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497512.4609515832!2d79.92880359762829!3d13.047374756556765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1622042191587!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <!------------------------contact--------------------->
+<div class="comment-box">
+    <h3>Leave a comment</h3>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Enter Name" required />
+      <input type="email" name="email" placeholder="Enter Email" required />
+      <textarea name="message" placeholder="Your Comment" rows="5"></textarea>
+
+        <button type="submit" class="hero-btn">SUBMIT</button>    
+    </form>
+    </div>
+
+<!------------------------footer---------------------------->
+                 <section class="footer">
+                     <h4>Contact Info</h4>
+                     <div class="content2">
+                     <h6>Address:</h6>
+                     <p>Postmaster,Chennai G.P.O., <br>Chennai, TamilNadu, India (IN)</p>
+                    </div>
+                     <div class="content2">
+                     <h6>Phone:</h6>
+                     <p>044 2521 6766</p>
+                     </div>
+                      <div class="content2">
+                     <h6>Email:</h6>
+                     <p>tourism@gmail.com</p>
+                         </div>
+                <div class="iconslink">
+                        <i class="fa fa-instagram" style="font-size:36px"></i>
+                         <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                          <i clas="fa fa-instagram" style="font-size:36px"></i>
+                          <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                         <i class="fa fa-twitter-square" style="font-size:36px"></i>
+                          </div>
+                        <p> © Copyright 2019. All Rights Reserved.</p>
+                   
+            </section>
+<!------------------------Javascript for toggle----------->
+    <script>
+    var nav = document.getElementById("nav");
+    function showMenu()
+        {
+          nav.style.right ="0";
+        }
+    function hideMenu()
+        {
+            nav.style.right ="-200px";
+        }
+    </script>
+    </body>
+</html>

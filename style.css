@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Newsreader', serif;
+    
+}
+.header{
+     width: 100%;
+    height:1000px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(image/frame.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 3px 6px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width:20%;
+    height:70px;
+}
+.nav ul li 
+{
+   
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+    color: white;
+}
+.nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.nav ul li ::after{
+    content:'';
+    width:0%;
+    display:block;
+    height:3px;
+    background: red;
+    margin: :auto;
+    transition: 1s;
+    
+}
+.nav ul li :hover::after{
+    width:100%;
+}
+.text
+{
+    width:100%;
+    height:10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30%;
+}
+.text h1
+{
+    font-size: 70px;
+    color: white;
+}
+.text h2
+{
+    font-size: 18px;
+    margin: 10px 0 4px;
+    margin-bottom: 45px;
+}
+.button
+{
+    color:white;
+    text-decoration: none;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border: 1px double white;
+    padding: 12px 5px;
+    
+}
+.button:hover
+{
+    background-color: rebeccapurple;
+    transition: 1s;
+}
+nav .fa
+{
+    display: none;
+}
+@media (max-width:700px)
+{
+    .text h1
+    {
+        font-size: 26px;
+    }
+    .text h2
+    {
+        font-size:12px;
+    }
+    nav img{
+        width:26%;
+        height: 50px;
+        
+    }
+    .nav ul li {
+        display: block;
+    }
+    .nav {
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        background: red;
+        transition: 1s;
+    }
+    nav .fa
+    {
+        display: block;
+        color:white;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 22px;
+    }
+    }
+/*---------------------religious------------*/
+.religious
+{
+    text-align: center;
+    color: brown;
+    top:30%;
+    left:20%;
+    margin: auto;
+    padding-top:100px;
+}
+h1{
+    color:brown;
+    font-size: 60px;
+    padding-top: 50px;
+}
+p
+{
+    color: brown;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.hindu
+{
+    float: left;
+    width:31%;
+    height:250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color:#fff;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+.hindu:hover{
+     box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.Muslim
+{
+    float: left;
+    width:31%;
+    height:250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color:#fff;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+.Muslim:hover{
+      box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+.Christianity
+{
+    float: left;
+    width:31%;
+    height:250px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+.Christianity:hover{
+
+     box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container h1{
+    padding-top: 10px;
+    font-size: 30px;
+    margin-top: 8px;
+    text-align: center;
+      
+}
+.container p
+{   padding-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+@media(max-width: 700px){
+    .container
+    {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    .hindu
+    { 
+        width: auto;
+        flex-basis: 31%;
+        background: #fff;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+     .Muslim
+    {
+        width: auto;
+        flex-basis: 31%;
+        background: #fff;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+     .Christianity
+    {
+        width: auto;
+        flex-basis: 31%;
+        background: #fff;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+}
+/*----------------------all slide-------------*/
+
+.imagefix 
+{
+    width:50%;
+    height: 400px;
+}
+.area h1
+{
+    margin-top: 20px;
+}
+.area p
+{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/*-----------------------hillstation-------------------------*/
+
+ .slide
+    {
+        width: auto;
+        flex-basis: 70%;
+        background: #fff;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+.slide:hover{
+
+     box-shadow: 0 20px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    @media (max-width:700px)
+    {
+        .content h1
+        {
+            font-size: 2rem;
+        }
+        .area img{
+            margin-left: 5px;
+            margin-right: 5px;
+            width:80%;
+            height:190px ;
+        }
+    }
+/*---------------------religious page---------------*/
+.sub-header
+{
+    height: 70vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-header h1
+{
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+}
+.sub-header p
+{
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+    
+}
+/*---------------------hillstation page--------------------*/
+.sub-header1
+{
+    height: 70vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(image/film.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-header1 h1
+{
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+}
+.sub-header1 p
+{
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+    
+}
+/*---------------------coastal page--------------------*/
+.sub-header2
+{
+    height: 70vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(image/beachframe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+}
+.sub-header2 h1
+{
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+}
+.sub-header2 p
+{
+    
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+    
+}
+/*------------------------------footer-----------------*/
+.footer
+{
+    color: white;
+    background-color:black;
+    width:auto;
+    height: 400px;
+}
+.content2
+{
+    float:left;
+    width: 28%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.footer h4
+{
+    color: white;
+    padding-top: 4%;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.footer p
+{
+    color:grey;
+    font-size: 20px;
+    text-align: center;
+   
+}
+.footer h6
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.iconslink .fa
+{ 
+    margin: 0 13px;
+    cursor:pointer;
+    padding: 18px 0;
+    align-items: center; 
+}
+.iconslink .fa:hover
+{
+    opacity: 0.7;
+}
+
+@media(max-width:700px)
+{
+    .content2
+    { 
+        width: 40%;
+        background: grey;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        }
+    
+    .footer
+     {
+      background-color:black;
+      width:120%;
+      padding: 30px 0;
+      height: 800px;
+   
+     }
+       .footer h4
+    {
+        color: white;
+        text-align: center;
+        margin-left: 0;
+    }
+    .footer h6
+    {
+        text-align: center;
+        color: white;
+    }
+    .footer p
+    {
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+    .iconslink .fa
+    {
+        align-content: stretch;
+    }
+
+   
+}
+/*-------------------contactus----------------------*/
+
+.header1
+{
+    height: 70vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header1 h1
+{
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+}
+.header1 p
+{
+    font-size: 1.5rem;
+    top:50%;
+    left:30%;
+    color:white;
+    text-align: center;
+    
+}
+.comment-box h3
+{
+    top:50%;
+    left:30%;
+    color:black;
+    font-size: 2rem;
+    padding-top: 20px;
+    text-align: left;
+}
+.comment-box
+{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box input, .comment-box textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border:none;
+    outline: ;
+    background: #f0f0f0;
+}
+.hero-btn
+{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+    padding: 10px 4px;
+    cursor: pointer;
+    transform: 0.5s;
+    
+}
+.hero-btn:hover{
+    background-color:wheat;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+width:100%;
+}
